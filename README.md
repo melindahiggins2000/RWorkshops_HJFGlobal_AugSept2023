@@ -37,13 +37,13 @@
     - Files:
         - [Rmarkdown file with codes](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/AbaloneReport_v1.Rmd)
         - [abalone dataset - CSV format](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/abalone.csv)
-        - [Abalone Report - HTML](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/AbaloneReport_v1.html)
-        - [Abalone Report - DOCX](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/AbaloneReport_v1.docx)
-        - [Abalone Report - PDF](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/AbaloneReport_v1.pdf)
-        - [Abalone Report - HTML Slides, ioslides](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/Abalone_ioslides_v1.html)
-        - [Abalone Report - HTML Slides, slidy](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/Abalone_slidy_v1.html)
-        - [Abalone Report - PDF Slides, beamer](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/Abalone_beamer_slides_v1.pdf)
-        - [Abalone Report - PPT Slides](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/Abalone_PPTslides_v1.pptx)
+        - [Abalone Report - HTML](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/AbaloneReport_v1.html)
+        - [Abalone Report - DOCX - DOWNLOAD File](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/AbaloneReport_v1.docx)
+        - [Abalone Report - PDF](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/AbaloneReport_v1.pdf)
+        - [Abalone Report - HTML Slides, ioslides](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/Abalone_ioslides_v1.html)
+        - [Abalone Report - HTML Slides, slidy](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/Abalone_slidy_v1.html)
+        - [Abalone Report - PDF Slides, beamer](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/Abalone_beamer_slides_v1.pdf)
+        - [Abalone Report - PPT Slides - DOWNLOAD File](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/Abalone_PPTslides_v1.pptx)
 
 # Workshop 2 - August 25, 2023: Creating Data Summaries
 
