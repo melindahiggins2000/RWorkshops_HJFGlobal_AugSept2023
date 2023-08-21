@@ -162,7 +162,7 @@ ggplot(penguins) +
   ggtitle("Penguins Bill Dimensions")
 ```
 
-_See "module03_Rscript.R" - EXERCISE 01)_
+_See "ggplot_Rscript_01.R" - EXERCISE 01_
 
 ]
 
@@ -207,7 +207,19 @@ ggplot(penguins) +
 
 Add "aesthetics" using aes - provide the variables for X and Y axes. Notice the `aes()` is added using the `+` operator.
 
+OR can write as:
+
+
+```r
+# Next add aes (aesthetics)
+ggplot(penguins,
+       aes(x = bill_length_mm,
+           y = bill_depth_mm))
+```
+
 ]
+
+
 
 .right-plot[
 &lt;img src="HJF_Rworkshop_08242023_pt3_files/figure-html/plot-label2-out-1.png" width="80%" /&gt;

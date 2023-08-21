@@ -20,6 +20,26 @@
 * TOC 1
 {:toc}
 
+# Preparation
+
+* [Download and install R](https://cran.r-project.org/)
+* [Download and install RStudio Desktop](https://posit.co/download/rstudio-desktop/)
+* [optional read - Ch1 Getting Started with R/RStudio in "ModernDive" Book](https://moderndive.netlify.app/1-getting-started)
+* [Instructions for installing R  packages](https://moderndive.netlify.app/1-getting-started#package-installation) - _we will cover package installation during the workshop_.
+* R Packages for Workshop 1
+    - [`knitr`](https://cran.r-project.org/web/packages/knitr/index.html)
+    - [`rmarkdown`](https://cran.r-project.org/web/packages/rmarkdown/index.html)
+    - [`tinytex`](https://cran.r-project.org/web/packages/tinytex/index.html) & run the installation - see instructions at [https://yihui.org/tinytex/](https://yihui.org/tinytex/)
+    - [`tidyverse`](https://cran.r-project.org/web/packages/tidyverse/index.html) [includes `dplyr`, `ggplot2`, `tidyr`, `readr`, and more...]
+    - [`patchwork`](https://cran.r-project.org/web/packages/patchwork/index.html)
+    - [`palmerpenguins`](https://cran.r-project.org/web/packages/palmerpenguins/index.html)
+    - [`ggthemes`](https://cran.r-project.org/web/packages/ggthemes/index.html) _(optional)_
+    - [`ggthemr`](https://github.com/Mikata-Project/ggthemr) _(optional)_
+        - This package is NOT on CRAN and is installed from Github. You will need the [`devtools` package](https://cran.r-project.org/web/packages/devtools/index.html) to run the `devtools::install_github('Mikata-Project/ggthemr')` command.
+* R Packages for Workshop 2
+* R Packages for Workshop 3
+* R Packages for Workshop 4
+
 # Workshop 1 - August 24, 2023: Data Visualization _(plus Intros to R and RStudio and Rmarkdown)_
 
 * Part 1: [Intro to R and RStudio](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/HJF_Rworkshop_12Jan2023_pt1.html)

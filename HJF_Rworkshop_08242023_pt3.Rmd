@@ -216,7 +216,18 @@ ggplot(penguins) +
 
 Add "aesthetics" using aes - provide the variables for X and Y axes. Notice the `aes()` is added using the `+` operator.
 
+OR can write as:
+
+```{r eval=FALSE}
+# Next add aes (aesthetics)
+ggplot(penguins,
+       aes(x = bill_length_mm,
+           y = bill_depth_mm))
+```
+
 ]
+
+
 
 .right-plot[
 ```{r plot-label2-out, ref.label="plot-label2", echo=FALSE, out.width="80%"}
