@@ -87,9 +87,23 @@
 
 # Workshop 3 - September 7, 2023: Regression Methods/Modeling
 
+| Times       | Materials Covered |
+|-------------|-------------------|
+| 08:30-09:45 | .... |
+| 09:45-10:00 | Break |
+| 10:00-11:15 | .... |
+| 11:15-11:30 | Q&A |
+
 * _...materials to be added..._
 
 # Workshop 4 - September 8, 2023: Missing Data
+
+| Times       | Materials Covered |
+|-------------|-------------------|
+| 08:30-09:45 | .... |
+| 09:45-10:00 | Break |
+| 10:00-11:15 | .... |
+| 11:15-11:30 | Q&A |
 
 * _...materials to be added..._
 
