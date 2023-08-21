@@ -24,7 +24,7 @@
 
 * Part 1: [Intro to R and RStudio](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/HJF_Rworkshop_12Jan2023_pt1.html)
     - Download Files - right click and choose "Save As"
-    - [module01_Rscript.R]()
+    - [module01_Rscript.R](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/module01_Rscript.R)
 
 * Part 2: [Working with R Packages](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/HJF_Rworkshop_12Jan2023_pt2.html)
 
