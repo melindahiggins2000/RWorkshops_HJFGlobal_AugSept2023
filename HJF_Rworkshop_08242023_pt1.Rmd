@@ -189,7 +189,9 @@ knitr::include_graphics("module01_Rworkshop01.png")
 # Download "module01_Rscript.R" and place in this folder
 
 
-
+```{r out.width = '=80%', echo=FALSE}
+knitr::include_graphics("module01_saveLink.png")
+```
 
 ---
 

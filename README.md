@@ -29,19 +29,21 @@
 * Part 2: [Working with R Packages](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/HJF_Rworkshop_12Jan2023_pt2.html)
 
 * Part 3: [Intro to Visualizations with `ggplot2`](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/HJF_Rworkshop_12Jan2023_pt3.html)
+    - Download Files - right click and choose "Save As"
+    - [ggplot_Rscript_01.R](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/ggplot_Rscript_01.R)
 
 * Part 4: The Utility of Rmarkdown - Report and Slides all from 1 file!
     - Learn more about the Abalone dataset - freely available from the "UC Irvine Machine Learning Repository", see  [https://archive.ics.uci.edu/ml/datasets/abalone](https://archive.ics.uci.edu/ml/datasets/abalone)
     - Files:
-        - [Rmarkdown file with codes](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/AbaloneReport_v1.Rmd)
-        - [abalone dataset - CSV format](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/abalone.csv)
-        - [Abalone Report - HTML](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/AbaloneReport_v1.html)
-        - [Abalone Report - DOCX](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/AbaloneReport_v1.docx)
-        - [Abalone Report - PDF](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/AbaloneReport_v1.pdf)
-        - [Abalone Report - HTML Slides, ioslides](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/Abalone_ioslides_v1.html)
-        - [Abalone Report - HTML Slides, slidy](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/Abalone_slidy_v1.html)
-        - [Abalone Report - PDF Slides, beamer](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/Abalone_beamer_slides_v1.pdf)
-        - [Abalone Report - PPT Slides](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/Abalone_PPTslides_v1.pptx)
+        - [Rmarkdown file with codes](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/AbaloneReport_v1.Rmd)
+        - [abalone dataset - CSV format](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/abalone.csv)
+        - [Abalone Report - HTML](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/AbaloneReport_v1.html)
+        - [Abalone Report - DOCX](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/AbaloneReport_v1.docx)
+        - [Abalone Report - PDF](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/AbaloneReport_v1.pdf)
+        - [Abalone Report - HTML Slides, ioslides](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/Abalone_ioslides_v1.html)
+        - [Abalone Report - HTML Slides, slidy](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/Abalone_slidy_v1.html)
+        - [Abalone Report - PDF Slides, beamer](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/Abalone_beamer_slides_v1.pdf)
+        - [Abalone Report - PPT Slides](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/Abalone_PPTslides_v1.pptx)
 
 # Workshop 2 - August 25, 2023: Creating Data Summaries
 
