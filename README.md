@@ -46,7 +46,7 @@
     - Download Files - right click and choose "Save As"
     - [module01_Rscript.R](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/module01_Rscript.R)
 
-* Part 2: [Working with R Packages](hhttps://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/HJF_Rworkshop_08242023_pt2.html
+* Part 2: [Working with R Packages](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/HJF_Rworkshop_08242023_pt2.html)
 
 * Part 3: [Intro to Visualizations with `ggplot2`](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/HJF_Rworkshop_08242023_pt3.html)
     - Download Files - right click and choose "Save As"
