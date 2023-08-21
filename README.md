@@ -20,7 +20,7 @@
 * TOC 1
 {:toc}
 
-# Workshop 1 - August 24, 2023:
+# Workshop 1 - August 24, 2023: Data Visualization _(plus Intros to R and RStudio and Rmarkdown)_
 
 * Part 1: [Intro to R and RStudio](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/HJF_Rworkshop_12Jan2023_pt1.html)
     - Download Files - right click and choose "Save As"
@@ -43,17 +43,17 @@
         - [Abalone Report - PDF Slides, beamer](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/Abalone_beamer_slides_v1.pdf)
         - [Abalone Report - PPT Slides](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/Abalone_PPTslides_v1.pptx)
 
-# Workshop 2 - August 25, 2023:
+# Workshop 2 - August 25, 2023: Creating Data Summaries
 
-* stuff here
+* _...materials to be added..._
 
-# Workshop 3 - September 7, 2023:
+# Workshop 3 - September 7, 2023: Regression Methods/Modeling
 
-* stuff here
+* _...materials to be added..._
 
-# Workshop 4 - September 8, 2023:
+# Workshop 4 - September 8, 2023: Missing Data
 
-* stuff here
+* _...materials to be added..._
 
 -----
 
@@ -81,7 +81,8 @@
     * [Emory N736](https://melindahiggins2000.github.io/N736/)
 * [BOOK: Statistical Inference via Data Science](https://moderndive.com/)
 * [BOOK: The Epidemiologist R Handbook](https://epirhandbook.com/en/index.html)
-* [BOOK: R Graphics Cookbook, 2nd edition](https://r-graphics.org/) by Winston Chang and associated [R Graphics Cookbook website]( http://www.cookbook-r.com/Graphs/)
+* [BOOK: R Graphics Cookbook, 2nd edition](https://r-graphics.org/) by Winston Chang
+* [R Graphics Cookbook website]( http://www.cookbook-r.com/Graphs/) also by Winston Chang
 * [The R Graph Gallery](https://r-graph-gallery.com/)
 
 
