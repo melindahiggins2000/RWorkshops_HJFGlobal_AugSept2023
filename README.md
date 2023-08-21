@@ -23,8 +23,13 @@
 # Workshop 1 - August 24, 2023:
 
 * Part 1: [Intro to R and RStudio](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/HJF_Rworkshop_12Jan2023_pt1.html)
+    - Download Files - right click and choose "Save As"
+    - [module01_Rscript.R]()
+
 * Part 2: [Working with R Packages](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/HJF_Rworkshop_12Jan2023_pt2.html)
+
 * Part 3: [Intro to Visualizations with `ggplot2`](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/HJF_Rworkshop_12Jan2023_pt3.html)
+
 * Part 4: The Utility of Rmarkdown - Report and Slides all from 1 file!
     - Learn more about the Abalone dataset - freely available from the "UC Irvine Machine Learning Repository", see  [https://archive.ics.uci.edu/ml/datasets/abalone](https://archive.ics.uci.edu/ml/datasets/abalone)
     - Files:
