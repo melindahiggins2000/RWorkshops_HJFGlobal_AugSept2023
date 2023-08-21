@@ -42,13 +42,13 @@
 
 # Workshop 1 - August 24, 2023: Data Visualization _(plus Intros to R and RStudio and Rmarkdown)_
 
-* Part 1: [Intro to R and RStudio](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/HJF_Rworkshop_12Jan2023_pt1.html)
+* Part 1: [Intro to R and RStudio](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/HJF_Rworkshop_08242023_pt1.html)
     - Download Files - right click and choose "Save As"
     - [module01_Rscript.R](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/module01_Rscript.R)
 
-* Part 2: [Working with R Packages](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/HJF_Rworkshop_12Jan2023_pt2.html)
+* Part 2: [Working with R Packages](hhttps://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/HJF_Rworkshop_08242023_pt2.html
 
-* Part 3: [Intro to Visualizations with `ggplot2`](https://melindahiggins2000.github.io/HJF_GSchluck_Lecture_01122023/HJF_Rworkshop_12Jan2023_pt3.html)
+* Part 3: [Intro to Visualizations with `ggplot2`](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/HJF_Rworkshop_08242023_pt3.html)
     - Download Files - right click and choose "Save As"
     - [ggplot_Rscript_01.R](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/ggplot_Rscript_01.R)
 
