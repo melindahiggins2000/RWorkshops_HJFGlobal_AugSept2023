@@ -40,7 +40,16 @@
 * R Packages for Workshop 3
 * R Packages for Workshop 4
 
-# Workshop 1 - August 24, 2023: Data Visualization _(plus Intros to R and RStudio and Rmarkdown)_
+# Workshop 1 - August 24, 2023: Data Visualization 
+## _(plus Intros to R and RStudio and Rmarkdown)_
+
+| Times       | Materials Covered |
+|-------------|-------------------|
+| 08:30-09:45 | Part 1 and Part 2 |
+| 09:45-10:00 | Break |
+| 10:00-11:15 | Getting Started with `ggplot2` (part 3) |
+|             | Intro to Rmarkdown [if time - part 4] |
+| 11:15-11:30 | Q&A |
 
 * Part 1: [Intro to R and RStudio](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/HJF_Rworkshop_08242023_pt1.html)
     - Download Files - right click and choose "Save As"
@@ -52,7 +61,7 @@
     - Download Files - right click and choose "Save As"
     - [ggplot_Rscript_01.R](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/ggplot_Rscript_01.R)
 
-* Part 4: The Utility of Rmarkdown - Report and Slides all from 1 file!
+* [If Time] Part 4: The Utility of Rmarkdown - Report and Slides all from 1 file!
     - Learn more about the Abalone dataset - freely available from the "UC Irvine Machine Learning Repository", see  [https://archive.ics.uci.edu/ml/datasets/abalone](https://archive.ics.uci.edu/ml/datasets/abalone)
     - Files:
         - [Rmarkdown file with codes](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/AbaloneReport_v1.Rmd)
