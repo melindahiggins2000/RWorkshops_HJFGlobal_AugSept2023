@@ -74,7 +74,14 @@
         - [Abalone Report - PDF Slides, beamer](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/Abalone_beamer_slides_v1.pdf)
         - [Abalone Report - PPT Slides - DOWNLOAD File](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/Abalone_PPTslides_v1.pptx)
 
-# Workshop 2 - August 25, 2023: Creating Data Summaries
+# Workshop 2 - August 25, 2023: Creating and Working With Data Summaries
+
+| Times       | Materials Covered |
+|-------------|-------------------|
+| 08:30-09:45 | .... |
+| 09:45-10:00 | Break |
+| 10:00-11:15 | .... |
+| 11:15-11:30 | Q&A |
 
 * _...materials to be added..._
 
