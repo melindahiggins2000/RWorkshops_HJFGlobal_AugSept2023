@@ -1,4 +1,4 @@
-# MODULE 03 R Script ============================
+# ggplot2 R Script ==============================
 # EXERCISE 01: MAKE A SCATTERPLOT================
 library(palmerpenguins)
 library(ggplot2)

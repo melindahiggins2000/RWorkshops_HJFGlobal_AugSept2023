@@ -36,6 +36,7 @@
     - [`ggthemes`](https://cran.r-project.org/web/packages/ggthemes/index.html) _(optional)_
     - [`ggthemr`](https://github.com/Mikata-Project/ggthemr) _(optional)_
         - This package is NOT on CRAN and is installed from Github. You will need the [`devtools` package](https://cran.r-project.org/web/packages/devtools/index.html) to run the `devtools::install_github('Mikata-Project/ggthemr')` command.
+    - [`plyr`](https://cran.r-project.org/web/packages/plyr/index.html)
 * R Packages for Workshop 2
 * R Packages for Workshop 3
 * R Packages for Workshop 4
@@ -45,21 +46,18 @@
 
 | Times       | Materials Covered |
 |-------------|-------------------|
-| 08:30-09:45 | Part 1 and Part 2 |
+| 08:30-09:45 | Part 1 - [Intro to R and RStudio](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/HJF_Rworkshop_08242023_pt1.html) |
+|             | - [module01_Rscript.R](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/module01_Rscript.R) - right click "save as" |
+|             | Part 2 - [Working with R Packages](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/HJF_Rworkshop_08242023_pt2.html) |
+|             |  |
 | 09:45-10:00 | Break |
-| 10:00-11:15 | Getting Started with `ggplot2` (part 3) |
-|             | Intro to Rmarkdown [if time - part 4] |
+|             |  |
+| 10:00-11:15 | Part 3 - [Intro to Visualizations with `ggplot2`](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/HJF_Rworkshop_08242023_pt3.html) |
+|             | - [ggplot_Rscript_01.R](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/ggplot_Rscript_01.R) |
+|             | - [ggplot_Rscript_02.R](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/ggplot_Rscript_02.R) |
+|             | Part 4 - Intro to Rmarkdown [if time - see materials below] |
+|             |  |
 | 11:15-11:30 | Q&A |
-
-* Part 1: [Intro to R and RStudio](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/HJF_Rworkshop_08242023_pt1.html)
-    - Download Files - right click and choose "Save As"
-    - [module01_Rscript.R](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/module01_Rscript.R)
-
-* Part 2: [Working with R Packages](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/HJF_Rworkshop_08242023_pt2.html)
-
-* Part 3: [Intro to Visualizations with `ggplot2`](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/HJF_Rworkshop_08242023_pt3.html)
-    - Download Files - right click and choose "Save As"
-    - [ggplot_Rscript_01.R](https://raw.githubusercontent.com/melindahiggins2000/RWorkshops_HJFGlobal_AugSept2023/main/ggplot_Rscript_01.R)
 
 * [If Time] Part 4: The Utility of Rmarkdown - Report and Slides all from 1 file!
     - Learn more about the Abalone dataset - freely available from the "UC Irvine Machine Learning Repository", see  [https://archive.ics.uci.edu/ml/datasets/abalone](https://archive.ics.uci.edu/ml/datasets/abalone)
@@ -78,12 +76,33 @@
 
 | Times       | Materials Covered |
 |-------------|-------------------|
-| 08:30-09:45 | .... |
+| 08:30-09:45 | Part 5 - [Data Wrangling with `dplyr`](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/HJF_Rworkshop_08252023_pt1.html) |
+|             | - [dplyr_Rscript.R](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/dplyr_Rscript.R) |
+|             | Part 6 - [Clean and Explore Abalones: module06_Rscript.R]() |
+|             | - [abalone_clean.RData](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/abalone_clean.RData) |
+|             | - [abalone_table.Rmd](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/abalone_table.Rmd) |
+|             | - [abalone_table.html](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/abalone_table.html) |
+|             |  |
 | 09:45-10:00 | Break |
-| 10:00-11:15 | .... |
+|             |  |
+| 10:00-11:15 | Part 7 - [Merging Data](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/merging_datasets.html) |
+|             | - [module07_Rscript.R](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/module07_Rscript.R) |
+|             | - [data1.csv](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/data1.csv) |
+|             | - [data2.csv](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/data2.csv) |
+|             | - [data3.csv](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/data3.csv) |
+|             | Part 8 - [Data Restructuring](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/pivot_example.html) |
+|             | - [module08_Rscript.R](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/module08_Rscript.R) |
+|             | - [long1.csv](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/long1.csv) |
+|             | - [wide1.csv](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/wide1.csv) |
+|             | Part 9 - If Time [Simple Maps: module09_Rscript.R]() |
+|             | - Dataset [hospital_ops.csv](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/hospital_ops.csv) |
+|             | - Map Report Simple [RMD](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/MapReport_simple.Rmd) [HTML](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/MapReport_simple.html) |
+|             | - Map Report w/Parameters [RMD](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/MapReport_params.Rmd) [HTML](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/MapReport_params.html) |
+|             | - Map Report w/choice [RMD](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/MapReport_params_choice.Rmd) [HTML](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/MapReport_params_choice.html) |
+|             |  |
 | 11:15-11:30 | Q&A |
 
-* _...materials to be added..._
+
 
 # Workshop 3 - September 7, 2023: Regression Methods/Modeling
 
