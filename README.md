@@ -94,7 +94,7 @@
 |             | - [module08_Rscript.R](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/module08_Rscript.R) |
 |             | - [long1.csv](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/long1.csv) |
 |             | - [wide1.csv](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/wide1.csv) |
-|             | Part 9 - If Time [Simple Maps: module09_Rscript.R]() |
+|             | Part 9 - If Time [Simple Maps - R script](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/module09_Rscript.R) |
 |             | - Dataset [hospital_ops.csv](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/hospital_ops.csv) |
 |             | - Map Report Simple [RMD](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/MapReport_simple.Rmd) [HTML](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/MapReport_simple.html) |
 |             | - Map Report w/Parameters [RMD](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/MapReport_params.Rmd) [HTML](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/MapReport_params.html) |
