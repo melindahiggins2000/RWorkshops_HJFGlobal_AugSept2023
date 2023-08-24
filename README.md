@@ -26,20 +26,32 @@
 * [Download and install RStudio Desktop](https://posit.co/download/rstudio-desktop/)
 * [optional read - Ch1 Getting Started with R/RStudio in "ModernDive" Book](https://moderndive.netlify.app/1-getting-started)
 * [Instructions for installing R  packages](https://moderndive.netlify.app/1-getting-started#package-installation) - _we will cover package installation during the workshop_.
-* R Packages for Workshop 1
-    - [`knitr`](https://cran.r-project.org/web/packages/knitr/index.html)
-    - [`rmarkdown`](https://cran.r-project.org/web/packages/rmarkdown/index.html)
-    - [`tinytex`](https://cran.r-project.org/web/packages/tinytex/index.html) & run the installation - see instructions at [https://yihui.org/tinytex/](https://yihui.org/tinytex/)
-    - [`tidyverse`](https://cran.r-project.org/web/packages/tidyverse/index.html) [includes `dplyr`, `ggplot2`, `tidyr`, `readr`, and more...]
-    - [`patchwork`](https://cran.r-project.org/web/packages/patchwork/index.html)
-    - [`palmerpenguins`](https://cran.r-project.org/web/packages/palmerpenguins/index.html)
+
+## R Packages
+
+* R Packages for Workshops 1 & 2
+    - [`broom`](https://cran.r-project.org/web/packages/broom/index.html)
     - [`ggthemes`](https://cran.r-project.org/web/packages/ggthemes/index.html) _(optional)_
     - [`ggthemr`](https://github.com/Mikata-Project/ggthemr) _(optional)_
         - This package is NOT on CRAN and is installed from Github. You will need the [`devtools` package](https://cran.r-project.org/web/packages/devtools/index.html) to run the `devtools::install_github('Mikata-Project/ggthemr')` command.
+    - [`gmodels`](https://cran.r-project.org/web/packages/gmodels/index.html)
+    - [`gtsummary`](https://cran.r-project.org/web/packages/gtsummary/index.html)
+    - [`Hmisc`](https://cran.r-project.org/web/packages/Hmisc/index.html)
+    - [`knitr`](https://cran.r-project.org/web/packages/knitr/index.html)
+    - [`patchwork`](https://cran.r-project.org/web/packages/patchwork/index.html)
+    - [`palmerpenguins`](https://cran.r-project.org/web/packages/palmerpenguins/index.html)
     - [`plyr`](https://cran.r-project.org/web/packages/plyr/index.html)
-* R Packages for Workshop 2
+    - [`psych`](https://cran.r-project.org/web/packages/psych/index.html)
+    - [`rmarkdown`](https://cran.r-project.org/web/packages/rmarkdown/index.html)
+    - [`tidyverse`](https://cran.r-project.org/web/packages/tidyverse/index.html) [includes `dplyr`, `ggplot2`, `tidyr`, `readr`, and more...]
+    - [`tinytex`](https://cran.r-project.org/web/packages/tinytex/index.html) & run the installation - see instructions at [https://yihui.org/tinytex/](https://yihui.org/tinytex/)
+    - [`usmap`](https://cran.r-project.org/web/packages/usmap/index.html)
+
 * R Packages for Workshop 3
+    - TBA
+    
 * R Packages for Workshop 4
+    - TBA
 
 # Workshop 1 - August 24, 2023: Data Visualization 
 ## _(plus Intros to R and RStudio and Rmarkdown)_
