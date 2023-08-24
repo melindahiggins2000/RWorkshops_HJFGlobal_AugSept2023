@@ -92,7 +92,6 @@
 | 08:30-09:45 | Part 5 - [Data Wrangling with `dplyr`](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/HJF_Rworkshop_08252023_pt1.html) |
 |             | - [dplyr_Rscript.R](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/dplyr_Rscript.R) |
 |             | Part 6 - [Clean and Explore Abalones - R Script](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/module06_Rscript.R) |
-|             | - [module06_answers_Rscript.R](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/module06_answers_Rscript.R) |
 |             | - [Part 6 R Script Answers](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/module06_answers_Rscript.R) |
 |             | - [abalone_clean.RData](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/abalone_clean.RData) |
 |             | - [abalone_table.Rmd](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/abalone_table.Rmd) |
