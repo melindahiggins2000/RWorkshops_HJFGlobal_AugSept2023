@@ -30,6 +30,7 @@
 ## R Packages
 
 * R Packages for Workshops 1 & 2
+    - [`arsenal`](https://cran.r-project.org/web/packages/arsenal/index.html)
     - [`broom`](https://cran.r-project.org/web/packages/broom/index.html)
     - [`ggthemes`](https://cran.r-project.org/web/packages/ggthemes/index.html) _(optional)_
     - [`ggthemr`](https://github.com/Mikata-Project/ggthemr) _(optional)_
@@ -146,6 +147,7 @@
 * [Rmarkdown by RStudio](https://rmarkdown.rstudio.com/)
 * [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
 * [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
+* [Yihui Xie's knitr site](https://yihui.org/knitr/)
 * Example Blog [http://jenrichmond.rbind.io/post/2021-08-31-parameterised-penguins/](http://jenrichmond.rbind.io/post/2021-08-31-parameterised-penguins/)
 * Example Document [https://rpubs.com/jenrichmond/adelie](https://rpubs.com/jenrichmond/adelie)
 
