@@ -90,7 +90,8 @@
 | Times       | Materials Covered |
 |-------------|-------------------|
 | 08:30-09:45 | Part 5 - [Data Wrangling with `dplyr`](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/HJF_Rworkshop_08252023_pt1.html) |
-|             | - [dplyr_Rscript.R](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/dplyr_Rscript.R) |
+|             | - **UPDATED** [dplyr_Rscript.R](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/dplyr_Rscript.R) |
+|             | - **UPDATED** [dplyr_Rscript_wAnswers.R](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/dplyr_Rscript_wAnswers.R) |
 |             | Part 6 - [Clean and Explore Abalones - R Script](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/module06_Rscript.R) |
 |             | - [Part 6 R Script Answers](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/module06_answers_Rscript.R) |
 |             | - [abalone_clean.RData](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/abalone_clean.RData) |
@@ -115,6 +116,23 @@
 |             | - Map Report w/choice [RMD](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/MapReport_params_choice.Rmd) [HTML](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/MapReport_params_choice.html) |
 |             |  |
 | 11:15-11:30 | Q&A |
+
+### Question on importing datafiles with text blocks
+
+A question was asked about what happens if a data file has text blocks with commas or carriage returns that might cause a problem reading in a delimited file format.
+
+Here is a quick example to illustrate that it does work.
+
+Example Data in CSV and EXCEL formats:
+
+* [textwrap.csv](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/textwrap.csv)
+* [textwrap.xlsx](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/textwrap.xlsx)
+
+Example R Code to read these files:
+
+* [textwrap.R](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/textwrap.R)
+
+See this [document](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/textwrap.html) illustrating this **textwrap** example.
 
 
 

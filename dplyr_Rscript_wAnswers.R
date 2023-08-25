@@ -23,6 +23,16 @@ head(penguins.df)
 # Get list of variables (column names) in dataset
 names(penguins)
 
+# if you want to remove the quotes "" 
+# use the noquote() function
+noquote(names(penguins))
+
+# load dplyr package
+library(dplyr)
+
+# the dplyr approach to do this
+names(penguins) %>% noquote()
+
 # EXERCISE 02 ========================================
 # Get simple summary stats
 summary(penguins)
@@ -34,7 +44,6 @@ table(penguins$species,
       penguins$island)
 
 # Using `dplyr` - functions are verbs
-library(dplyr)
 penguins %>%
   pull(bill_length_mm) %>%
   mean()
@@ -92,6 +101,16 @@ penguins %>%
   dplyr::group_by(species) %>%
   dplyr::summarize(across(ends_with("mm"), mean, na.rm = TRUE))
 
+# WARNING ABOUT UPDATE TO ACROSS()
+# change out the code on how "mean()" is called
+# see more at 
+# https://dplyr.tidyverse.org/reference/across.html
+# this removed the error
+penguins %>%
+  dplyr::group_by(species) %>%
+  dplyr::summarize(across(ends_with("mm"), 
+                          ~ mean(.x, na.rm = TRUE)))
+
 # EXERCISE 04 YOUR TURN ===============================
 # get min and max of flipper_length_mm
 # by island
@@ -120,6 +139,13 @@ penguins %>%
            median, 
            na.rm = TRUE))
 
+# UPDATED
+penguins %>%
+  dplyr::group_by(island) %>%
+  dplyr::summarize(
+    across(starts_with("b"), 
+           ~ median(.x, na.rm = TRUE)))
+
 # Using `dplyr::filter()` to select cases (rows)
 # notice the double =='s
 penguins %>%
@@ -142,14 +168,50 @@ penguins_mod <- penguins %>%
     body_mass_g > 4500 ~ "large",
     body_mass_g > 3000 & 
       body_mass_g <= 4500 ~ "medium",
-    body_mass_g <= 3000 ~ "small"
-  )
-  )
+    body_mass_g <= 3000 ~ "small"))
+
+# suppose you want to set the NAs to "unknown"
+penguins_mod <- penguins %>%
+  mutate(size_bin = case_when(
+    body_mass_g > 4500 ~ "large",
+    body_mass_g > 3000 & 
+      body_mass_g <= 4500 ~ "medium",
+    body_mass_g <= 3000 ~ "small")) %>%
+  mutate(size_bin_unk = case_when(
+    body_mass_g > 4500 ~ "large",
+    body_mass_g > 3000 & 
+      body_mass_g <= 4500 ~ "medium",
+    body_mass_g <= 3000 ~ "small",
+    TRUE ~ "unknown"))
+
+# suppose you want to make all the small
+# penguins < 3000 body_mass_g set to NA
+penguins_mod <- penguins_mod %>%
+  mutate(size_bin_unk2 = case_when(
+    body_mass_g > 4500 ~ "large",
+    body_mass_g > 3000 & 
+      body_mass_g <= 4500 ~ "medium",
+    body_mass_g <= 3000 ~ NA_character_,
+    TRUE ~ "unknown"))
 
 # Create summary table 
 # of size categories
+# compare recoding options
+
+# NAs (missing data) kept as NAs after recode
 penguins_mod %>% 
   pull(size_bin) %>% 
+  table(useNA = "ifany")
+
+# NAs (missing data) set to "unknown" after recode
+penguins_mod %>% 
+  pull(size_bin_unk) %>% 
+  table(useNA = "ifany")
+
+# NAs (missing data) set to "unknown" after recode
+# and small penguins new to missing NAs
+penguins_mod %>% 
+  pull(size_bin_unk2) %>% 
   table(useNA = "ifany")
 
 # Make a 2-way table
@@ -158,6 +220,10 @@ penguins_mod %>%
 # names in table() function
 penguins_mod %>%
   with(table(species, island))
+
+# note this also works
+penguins_mod %>%
+  with(., table(species, island))
 
 
 # EXERCISE 06 YOUR TURN ===========================
