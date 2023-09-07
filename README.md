@@ -155,14 +155,12 @@ Additional R packages to be used today:
 | 08:30-09:45 | review workshops 1, 2 and textwrap question|
 |             | [abalone_cleanData_Rscript.R](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/abalone_cleanData_Rscript.R) |
 |             | [abaloneClean_tests_Rscript.R](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/abaloneClean_tests_Rscript.R) |
-|             | |
 | 09:45-10:00 | Break |
 | 10:00-11:15 | Working with Rmarkdown |
 |             | Regression - linear and logistic |
 |             | [AbaloneReport_Sept2023.Rmd](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/AbaloneReport_Sept2023.Rmd) |
 |             | [AbaloneReport_Sept2023.html](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/AbaloneReport_Sept2023.html) |
 |             | [AbaloneReport_Sept2023.pdf](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/AbaloneReport_Sept2023.pdf) |
-|             | |
 | 11:15-11:30 | Q&A |
 
 
