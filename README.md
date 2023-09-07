@@ -153,8 +153,9 @@ Additional R packages to be used today:
 | Times       | Materials Covered |
 |-------------|-------------------|
 | 08:30-09:45 | review workshops 1, 2 and textwrap question|
-|             | [abalone_cleanData_Rscript.R](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/abalone_cleanData_Rscript.R) |
-|             | [abaloneClean_tests_Rscript.R](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/abaloneClean_tests_Rscript.R) |
+|             | [Quick Overview of R Objects](https://melindahiggins2000.github.io/N741_Spring2021_lesson04_dataWranglingDplyr/N741_IntroductionToRObjects_mkh.html) |
+|             | [R Program - Clean Abalone Data](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/abalone_cleanData_Rscript.R) |
+|             | [R Program - Performing Statistical Tests](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/abaloneClean_tests_Rscript.R) |
 | 09:45-10:00 | Break |
 | 10:00-11:15 | Working with Rmarkdown |
 |             | Regression - linear and logistic |
