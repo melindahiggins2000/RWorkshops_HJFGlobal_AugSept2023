@@ -1,0 +1,362 @@
+---
+title: "Abalone Report"
+author: "Melinda Higgins"
+date: "09/06/2023"
+output:
+  pdf_document: default
+  html_document: default
+subtitle: Data exploration, Cleaning, Models and Tests
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      error = TRUE,
+                      message = FALSE,
+                      warning = FALSE)
+
+# read in abalone dataset
+# file import dataset using readr
+# library(readr)
+# abalone <- 
+#   read_csv("abalone.csv")
+
+# OR read in cleaned dataset and rename dataset
+load("abalone_clean.RData")
+abalone <- abalone_clean
+```
+
+## Summary Statistics of Abalones' - Dimensional Measurements
+
+A useful R package for making tables is the `arsenal` package. Learn more at: 
+
+* [https://cran.r-project.org/web/packages/arsenal/index.html](https://cran.r-project.org/web/packages/arsenal/index.html) and 
+* [https://mayoverse.github.io/arsenal/](https://mayoverse.github.io/arsenal/).
+
+The key function is `tableby()`, see the vignette at [https://mayoverse.github.io/arsenal/articles/tableby.html](https://mayoverse.github.io/arsenal/articles/tableby.html).
+
+```{r results = "asis"}
+# NOTE: For rmarkdown to show this table correctly in 
+# the final knitted output, set the R chunk option
+# above to results = "asis".
+
+# load arsenal package
+library(arsenal)
+
+# create table of summary statistics
+# overall sample no groups yet
+tab1 <- 
+  tableby(~ length + diameter + height, 
+          data=abalone)
+
+# use the summary() function to produce the final table summary
+summary(tab1)
+```
+
+## Summary Statistics of Abalones' - Weight Measurements
+
+```{r results = "asis"}
+#library(arsenal)
+
+# put in code here to get a table of summary stats
+# for wholeWeight, shuckedWeight, visceraWeight 
+# and shellWeight
+
+tab2 <- 
+  tableby(~ wholeWeight + shuckedWeight + 
+            visceraWeight + shellWeight, 
+          data=abalone)
+
+summary(tab2)
+```
+
+## Abalone Dimensional Measurements by Sex - default statistical tests
+
+Now we can add a grouping variable such as comparing these summary statistics between the 3 biological sex groups: Male, Female and Infant.
+
+Notice that the default settings produce a p-value. The `arsenal::tableby()` function is performing an ANOVA (analysis of variance) for each of these measurements.
+
+```{r results = "asis"}
+library(arsenal)
+
+tab3 <- 
+  tableby(sex ~ length + diameter + height, 
+          data = abalone)
+
+summary(tab3,
+        pfootnote = TRUE)
+```
+
+## Abalone Dimensional Measurements by Sex - change statistical test
+
+Suppose you decide that `diameter` is skewed and really need non-parametric statistics and the Kruskall-Wallis non-parametric ANOVA test performed. We can customize the statistics - learn more at [https://mayoverse.github.io/arsenal/articles/tableby.html#change-summary-statistics-within-the-formula-1](https://mayoverse.github.io/arsenal/articles/tableby.html#change-summary-statistics-within-the-formula-1) and see more options at  [https://mayoverse.github.io/arsenal/articles/tableby.html#available-function-options-1](https://mayoverse.github.io/arsenal/articles/tableby.html#available-function-options-1).
+
+You'll notice this automatically creates footnotes for each customized statistic in the output table.
+
+```{r results = "asis"}
+tab4 <- 
+  tableby(sex ~ anova(length, "Nmiss", "meansd") + 
+            kwt(diameter, "Nmiss", "medianq1q3") + 
+            anova(height, "Nmiss", "meansd"), 
+          data=abalone)
+
+summary(tab4,
+        pfootnote = TRUE)
+```
+
+## Abalone Weight Measurements by Sex
+
+```{r results = "asis"}
+#library(arsenal)
+
+# put in code here to get a table of summary stats
+# for wholeWeight, shuckedWeight, visceraWeight 
+# and shellWeight
+
+tab5 <- 
+  tableby(sex ~ wholeWeight + shuckedWeight + 
+            visceraWeight + shellWeight, 
+          data=abalone)
+
+summary(tab5,
+        pfootnote = TRUE)
+```
+
+## Plot of Abalone Age by shuckedWeight
+
+```{r}
+library(dplyr)
+abalone <- abalone %>%
+  mutate(age = rings + 1.5)
+
+library(ggplot2)
+
+ggplot(abalone,
+       aes(x=shuckedWeight, 
+           y=age)) +
+  geom_point() +
+  # add loess smoothed line
+  geom_smooth(method = lm) + 
+  xlab("Shucked Weight (g)") + 
+  ylab("Age (in years)") + 
+  ggtitle("Abalone Age by Shucked Weight")
+```
+
+## Plot of Abalone Age by Shucked Weight - by sex
+
+Create a plot of abalone age by shucked weight in g Show the plot by sex - either add a color by sex or a facet_wrap().
+
+```{r}
+# put your code here
+# option 1 color points by sex
+ggplot(abalone,
+       aes(x = shuckedWeight, 
+           y = age,
+           color = sex)) +
+  geom_point() +
+  # add loess smoothed line
+  geom_smooth(method = lm) + 
+  xlab("Diameter (mm)") + 
+  ylab("Age (in years)") + 
+  ggtitle("Abalone Age by Shucked Weight")
+
+# option 2 facet_wrap() by sex
+ggplot(abalone,
+       aes(x = shuckedWeight, 
+           y = age)) +
+  geom_point() +
+  # add loess smoothed line
+  geom_smooth(method = lm) + 
+  xlab("Diameter (mm)") + 
+  ylab("Age (in years)") + 
+  ggtitle("Abalone Age by Shucked Weight") +
+  facet_wrap(vars(sex))
+```
+
+## Linear Regression - Abalone Age by Shucked Weight (model 1)
+
+```{r}
+lm1 <- lm(age ~ shuckedWeight,
+          data = abalone)
+
+# get nicer output
+library(broom)
+knitr::kable(tidy(lm1),
+             caption = "Regression of Abalone Age by Shucked Weight")
+```
+
+## Linear Regression - Abalone Age by Shucked Weight, adjusted for sex (model 2)
+
+```{r}
+lm2 <- lm(age ~ shuckedWeight + sex,
+          data = abalone)
+
+# get nicer output
+library(broom)
+knitr::kable(tidy(lm2),
+             caption = "Regression of Abalone Age by Shucked Weight adjusted for Sex")
+```
+
+## Compare Models - piecemeal steps
+
+```{r}
+slm1 <- summary(lm1)
+slm2 <- summary(lm2)
+mod12 <- anova(lm1, lm2)
+
+# pull out p-value
+pval12 <- mod12$`Pr(>F)`[2]
+```
+
+The change in R2 for the 2 models is `r slm2$r.squared - slm1$r.squared` with a p-value of `r pval12`.
+
+# Compare models - use `gtsummary` package
+
+Model 1 output
+
+```{r}
+library(gtsummary)
+lm1 %>%
+  tbl_regression(intercept = TRUE)
+```
+
+Model 2 output
+
+```{r}
+lm2 %>%
+  tbl_regression(intercept = TRUE)
+```
+
+Put models side by side
+
+```{r}
+t1 <-
+  lm1 %>%
+  tbl_regression(intercept = TRUE)
+t2 <-
+  lm2 %>%
+  tbl_regression(intercept = TRUE)
+
+tbl_merge <-
+  tbl_merge(
+    tbls = list(t1, t2),
+    tab_spanner = c("**Model 1**", "**Model 2**")
+  ) 
+tbl_merge
+```
+
+## The `stargazer` package - works for HTML and PDF
+
+**WARNING** This does NOT work for WORD documents. However, you can create the HTML output and then "cut-and-paste" the HTML table into WORD.
+
+```{r results = "asis"}
+library(stargazer)
+# stargazer(lm1, lm2,
+#           type = "html")
+
+# use this code if knitting to PDF
+stargazer(lm1, lm2,
+          type = "latex")
+```
+
+## Creating APA style tables
+
+This package makes nice output but saves each table in a separate output DOC file. This does work for WORD documents.
+
+```{r}
+library(apaTables)
+apa1 <- apa.reg.table(lm1,
+              table.number = 1,
+              filename = "table1.doc")
+apa2 <- apa.reg.table(lm2,
+              table.number = 2,
+              filename = "table2.doc")
+apa3 <- apa.reg.table(lm1, lm2,
+              table.number = 3,
+              filename = "table3.doc")
+```
+
+To embed the `apaTable` output inside the Rmarkdown document, we can do the following...
+
+Pull out the key parts of the output object. Make a nice table for the formatted output for `apa3` and then add the footnote using inline r code.
+
+```{r}
+apa3[["table_body"]] %>%
+  knitr::kable()
+```
+
+`r apa3[["table_note"]]`
+
+
+## Visualize Regression Coefficients
+
+Here is an example plot of the coefficients from Model 2 (`lm2`) using the packages from `easystats` - namely the `parameters` and `see` packages.
+
+Learn more at [https://easystats.github.io/easystats/](https://easystats.github.io/easystats/).
+
+```{r}
+library(easystats)
+library(parameters)
+p2 <- parameters::model_parameters(lm2)
+  
+library(see)
+plot(p2)
+```
+
+Here is another example using the `sjPlot` package. Note: I also had to install/update the associated `sjstats` package. Learn more at [http://www.strengejacke.de/sjPlot/reference/plot_model.html](http://www.strengejacke.de/sjPlot/reference/plot_model.html).
+
+```{r}
+library(sjPlot)
+plot_model(lm2)
+```
+
+## Logistic Regression of `adult` by Shucked Weight and Diameter
+
+**NOTE:** The `adult` variable is currently a "character" class variable. So, let's create a 0/1 coded variable.
+
+```{r}
+abalone <- abalone %>%
+  mutate(adult01 = ifelse(
+    adult == "adult", 1, 0
+  ))
+
+glm1 <- glm(adult01 ~ shuckedWeight + diameter,
+            data = abalone,
+            family = binomial)
+```
+
+Use `parameters` package to get model coefficients table.
+
+```{r}
+library(parameters)
+model_parameters(glm1,
+                 exponentiate = TRUE) %>%
+  knitr::kable()
+```
+
+Another option using the `gtsummary` package.
+
+```{r}
+library(gtsummary)
+tbl_regression(glm1,
+               exponentiate = TRUE)
+```
+
+Compute the AUC for the model and plot the ROC curve.
+
+```{r}
+library(pROC)
+# get predicted outcome
+pred_glm1 <- 
+  predict(glm1, 
+          newdata = abalone, 
+          type = "response")
+
+# compare original adult groups
+# to those predicted by model
+roc(abalone$adult01 ~ pred_glm1, 
+    plot = TRUE, 
+    print.auc = TRUE)
+```
+

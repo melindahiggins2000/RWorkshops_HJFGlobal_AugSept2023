@@ -138,14 +138,33 @@ See this [document](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_Au
 
 # Workshop 3 - September 7, 2023: Regression Methods/Modeling
 
+Additional R packages to be used today:
+
+* [purrr](https://cran.r-project.org/web/packages/purrr/)
+* [stargazer](https://cran.r-project.org/web/packages/stargazer/)
+* [apaTables](https://cran.r-project.org/web/packages/apaTables/)
+* [easystats](https://cran.r-project.org/web/packages/easystats/)
+* [parameters](https://cran.r-project.org/web/packages/parameters/)
+* [see](https://cran.r-project.org/web/packages/see/)
+* [sjPlot](https://cran.r-project.org/web/packages/sjPlot/)
+* [sjstats](https://cran.r-project.org/web/packages/sjstats/)
+* [pROC](https://cran.r-project.org/web/packages/pROC/)
+
 | Times       | Materials Covered |
 |-------------|-------------------|
-| 08:30-09:45 | .... |
+| 08:30-09:45 | review workshops 1, 2 and textwrap question|
+|             | [abalone_cleanData_Rscript.R](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/abalone_cleanData_Rscript.R) |
+|             | [abaloneClean_tests_Rscript.R](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/abaloneClean_tests_Rscript.R) |
+|             | |
 | 09:45-10:00 | Break |
-| 10:00-11:15 | .... |
+| 10:00-11:15 | Working with Rmarkdown |
+|             | Regression - linear and logistic |
+|             | [AbaloneReport_Sept2023.Rmd](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/AbaloneReport_Sept2023.Rmd) |
+|             | [AbaloneReport_Sept2023.html](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/AbaloneReport_Sept2023.html) |
+|             | [AbaloneReport_Sept2023.pdf](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/AbaloneReport_Sept2023.pdf) |
+|             | |
 | 11:15-11:30 | Q&A |
 
-* _...materials to be added..._
 
 # Workshop 4 - September 8, 2023: Missing Data
 
