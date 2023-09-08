@@ -10,6 +10,18 @@ abalone_clean %>%
             sd_sw = sd(shuckedWeight),
             n_sw = n())
 
+abalone_clean %>%
+  group_by(adult) %>%
+  summary()
+
+abalone_clean <- abalone_clean %>%
+  mutate(sizecat = case_when(
+    (wholeWeight < 0.3) ~ "small",
+    (wholeWeight >= 0.3 & wholeWeight < 0.6) ~ "medium",
+    (wholeWeight >= 0.6) ~ "large",
+    TRUE ~ NA_character_
+  ))
+
 # another option for getting grouped output
 # tapply() approach for the summary() function
 # for descriptive statistics
@@ -81,6 +93,7 @@ lm1$coefficients
 hist(lm1$residuals)
 
 summary(lm1)
+anova(lm1)
 
 # save the summarized output
 slm1 <- summary(lm1)
@@ -97,6 +110,10 @@ abalone_clean_lm1 <- augment(lm1)
 glance(lm1)
 glance(lm1)$p.value
 glance(lm1)$r.squared
+glance(lm1)$AIC
+
+glm1 <- glance(lm1)
+glm1$logLik
 
 # PLOT OF FITTED REGRESSION MODEL ===============
 library(ggplot2)
@@ -108,8 +125,8 @@ ggplot(abalone_clean,
 
 # plot by adults versus infants
 ggplot(abalone_clean,
-       aes(x = rings,
-           y = shuckedWeight,
+       aes(x = shuckedWeight,
+           y = rings,
            color = adult)) +
   geom_point() + 
   geom_smooth(method = lm)

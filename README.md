@@ -167,14 +167,27 @@ Additional R packages to be used today:
 
 # Workshop 4 - September 8, 2023: Missing Data
 
+Additional packages for today:
+
+* [VIM](https://cran.r-project.org/web/packages/VIM/)
+* [naniar](https://cran.r-project.org/web/packages/naniar/)
+* [mice](https://cran.r-project.org/web/packages/mice/)
+
 | Times       | Materials Covered |
 |-------------|-------------------|
-| 08:30-09:45 | .... |
+| 08:30-09:45 | [missingData.R R Script](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/missingData.R) |
 | 09:45-10:00 | Break |
-| 10:00-11:15 | .... |
-| 11:15-11:30 | Q&A |
+| 10:00-11:15 | More with Rmarkdown |
+|             | Part 9 - If Time [Simple Maps - R script](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/module09_Rscript.R) |
+|             | - Dataset [hospital_ops.csv](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/hospital_ops.csv) |
+|             | - Map Report Simple [RMD](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/MapReport_simple.Rmd) [HTML](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/MapReport_simple.html) |
+|             | - Map Report w/Parameters [RMD](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/MapReport_params.Rmd) [HTML](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/MapReport_params.html) |
+|             | - Map Report w/choice [RMD](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/MapReport_params_choice.Rmd) [HTML](https://melindahiggins2000.github.io/RWorkshops_HJFGlobal_AugSept2023/MapReport_params_choice.html) |
+| 11:15-11:30 | Open Discussion and Q&A |
 
-* _...materials to be added..._
+Useful reference on missing data:
+
+* [CH.20 in the Epidimiologist R Handbook](https://epirhandbook.com/en/missing-data.html)
 
 -----
 

@@ -20,6 +20,11 @@ abalone %>%
   arrange(desc(height)) %>%
   head()
 
+# HINT: Before running - make Console window wider to see all columns
+abalone %>%
+  arrange(height) %>%
+  head()
+
 # there are 2 abalones that have a height of 0
 # let's filter these out
 # set filter for height NOT EQUAL TO 0
@@ -92,6 +97,15 @@ abalone %>%
   filter((height > length) | (diameter > length)) %>%
   nrow()
 
+#' suppose we want to find
+#' the ids of the abalones
+#' with this measurement issue
+
+abalone %>%
+  filter((height > length) | (diameter > length)) %>%
+  select(id)
+
+
 # EXERCISE 03 YOUR TURN =============================
 # Create abalone_mod2 that starts with abalone_mod1
 # and filters out any abalones with
@@ -124,6 +138,12 @@ abalone_mod2 %>%
            (visceraWeight > wholeWeight) | 
            (shellWeight > wholeWeight)) %>%
   nrow()
+
+abalone_mod2 %>%
+  filter((shuckedWeight > wholeWeight) | 
+           (visceraWeight > wholeWeight) | 
+           (shellWeight > wholeWeight)) %>%
+  select(id)
 
 # EXERCISE 05 YOUR TURN =============================
 # Create abalone_mod3 that filters out any abalones

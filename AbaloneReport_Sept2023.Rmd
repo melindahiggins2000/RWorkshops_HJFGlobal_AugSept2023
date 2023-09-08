@@ -1,13 +1,13 @@
 ---
 title: "Abalone Report"
+subtitle: "making tables and regression analysis"
 author: "Melinda Higgins"
 date: "09/06/2023"
 output:
-  pdf_document: default
   html_document: default
-subtitle: Data exploration, Cleaning, Models and Tests
+  pdf_document: default
 editor_options:
-  chunk_output_type: console
+  chunk_output_type: inline
 ---
 
 ```{r setup, include=FALSE}
@@ -29,12 +29,12 @@ abalone <- abalone_clean
 
 ## Summary Statistics of Abalones' - Dimensional Measurements
 
-A useful R package for making tables is the `arsenal` package. Learn more at: 
+A useful R package for making tables is the `arsenal` package. Learn more at:
 
-* [https://cran.r-project.org/web/packages/arsenal/index.html](https://cran.r-project.org/web/packages/arsenal/index.html) and 
-* [https://mayoverse.github.io/arsenal/](https://mayoverse.github.io/arsenal/).
+-   <https://cran.r-project.org/web/packages/arsenal/index.html> and
+-   <https://mayoverse.github.io/arsenal/>.
 
-The key function is `tableby()`, see the vignette at [https://mayoverse.github.io/arsenal/articles/tableby.html](https://mayoverse.github.io/arsenal/articles/tableby.html).
+The key function is `tableby()`, see the vignette at <https://mayoverse.github.io/arsenal/articles/tableby.html>.
 
 ```{r results = "asis"}
 # NOTE: For rmarkdown to show this table correctly in 
@@ -90,7 +90,7 @@ summary(tab3,
 
 ## Abalone Dimensional Measurements by Sex - change statistical test
 
-Suppose you decide that `diameter` is skewed and really need non-parametric statistics and the Kruskall-Wallis non-parametric ANOVA test performed. We can customize the statistics - learn more at [https://mayoverse.github.io/arsenal/articles/tableby.html#change-summary-statistics-within-the-formula-1](https://mayoverse.github.io/arsenal/articles/tableby.html#change-summary-statistics-within-the-formula-1) and see more options at  [https://mayoverse.github.io/arsenal/articles/tableby.html#available-function-options-1](https://mayoverse.github.io/arsenal/articles/tableby.html#available-function-options-1).
+Suppose you decide that `diameter` is skewed and really need non-parametric statistics and the Kruskall-Wallis non-parametric ANOVA test performed. We can customize the statistics - learn more at <https://mayoverse.github.io/arsenal/articles/tableby.html#change-summary-statistics-within-the-formula-1> and see more options at <https://mayoverse.github.io/arsenal/articles/tableby.html#available-function-options-1>.
 
 You'll notice this automatically creates footnotes for each customized statistic in the output table.
 
@@ -252,12 +252,12 @@ tbl_merge
 
 ```{r results = "asis"}
 library(stargazer)
-# stargazer(lm1, lm2,
-#           type = "html")
+stargazer(lm1, lm2,
+          type = "html")
 
 # use this code if knitting to PDF
-stargazer(lm1, lm2,
-          type = "latex")
+# stargazer(lm1, lm2,
+#           type = "latex")
 ```
 
 ## Creating APA style tables
@@ -288,12 +288,11 @@ apa3[["table_body"]] %>%
 
 `r apa3[["table_note"]]`
 
-
 ## Visualize Regression Coefficients
 
 Here is an example plot of the coefficients from Model 2 (`lm2`) using the packages from `easystats` - namely the `parameters` and `see` packages.
 
-Learn more at [https://easystats.github.io/easystats/](https://easystats.github.io/easystats/).
+Learn more at <https://easystats.github.io/easystats/>.
 
 ```{r}
 library(easystats)
@@ -304,7 +303,7 @@ library(see)
 plot(p2)
 ```
 
-Here is another example using the `sjPlot` package. Note: I also had to install/update the associated `sjstats` package. Learn more at [http://www.strengejacke.de/sjPlot/reference/plot_model.html](http://www.strengejacke.de/sjPlot/reference/plot_model.html).
+Here is another example using the `sjPlot` package. Note: I also had to install/update the associated `sjstats` package. Learn more at <http://www.strengejacke.de/sjPlot/reference/plot_model.html>.
 
 ```{r}
 library(sjPlot)
@@ -359,4 +358,3 @@ roc(abalone$adult01 ~ pred_glm1,
     plot = TRUE, 
     print.auc = TRUE)
 ```
-
